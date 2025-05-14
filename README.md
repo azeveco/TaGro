@@ -11,9 +11,25 @@ TaGro is a Chromium extension to list, search and open Tab Groups by using short
 </p>
 
 # Requirements
+
 - Chrome/Chromium/Brave (or any other Chromium-based browser)
 - Tab Groups enabled (it is by default)
 - Tab Groups opened (if you want to see them in the list)
+
+# Installation
+
+To install TaGro, you can either:
+- Download the extension from the [Chrome Web Store](https://chrome.google.com/webstore/detail/tagro/).
+- Download the source code and load it as an unpacked extension:
+  - Go to the extension management page
+  - Enable "Developer mode" (usually at the top right corner)
+  - Click on "Load unpacked"
+  - Select the folder where you downloaded the source code
+  - The extension should now be loaded and you should see it in the list of extensions
+- After that, you can:
+  - Pin it to the toolbar by clicking on the puzzle icon (top right corner) and clicking on the pin icon next to TaGro
+  - Right-click on the extension icon and select "Pin" to pin it to the toolbar, or
+  - Right-click on the extension icon and select "Manage extension" to open the extension's settings page
 
 # Usage
 
