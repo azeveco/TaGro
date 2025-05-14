@@ -84,10 +84,13 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       li.addEventListener('click', () => {
-        // If the group is open, activate the first tab in the group
+        // If the group is open, activate the first tab in the group and focus its window
         chrome.tabs.query({ groupId: group.id }, tabs => {
           if (tabs.length > 0) {
-            chrome.tabs.update(tabs[0].id, { active: true });
+            const tab = tabs[0];
+            chrome.windows.update(tab.windowId, { focused: true }, () => {
+              chrome.tabs.update(tab.id, { active: true });
+            });
           }
         });
       });
