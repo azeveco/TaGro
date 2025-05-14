@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "TaGro - List, Search & Open Tab Groups",
+  "version": "1.0",
+  "description": "TaGro is a Chromium extension to list, search and open Tab Groups by using shortcuts.",
+  "icons": {
+    "128": "media/icons/Tagro128-icon.png"
+  },
+  "permissions": [
+    "tabs",
+    "tabGroups",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "options_page": "settings.html",
+  "commands": {
+    "open-tab-groups-menu": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y",
+        "mac": "Command+Shift+Y"
+      },
+      "description": "Open the tab groups menu"
+    }
+  }
+}

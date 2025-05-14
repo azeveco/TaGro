@@ -1,0 +1,72 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 10px;
+  width: 300px;
+  background-color: #f9f9f9; /* Default light mode */
+  color: #333;
+  border-radius: 8px; /* Add light border radius to the popup */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle shadow for better visibility */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+li {
+  font-size: 14px;
+  margin: 5px 0;
+  padding: 4px 12px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  display: block;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s, box-shadow 0.3s;
+  backdrop-filter: blur(4px);
+  background-clip: padding-box;
+}
+li:hover {
+  background: rgba(0, 0, 0, 0.15); /* Slightly darker on hover */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 14px;
+  background-color: #f9f9f9; /* Default light mode background */
+  color: #333; /* Default light mode text color */
+}
+input:focus {
+  outline: none;
+  border-color: #0078d7;
+  box-shadow: 0 0 5px rgba(0, 120, 215, 0.5);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1e1e1e; /* Dark mode background */
+    color: #f9f9f9; /* Light text for dark mode */
+  }
+
+  li {
+    background: rgba(255, 255, 255, 0.1); /* Adjusted for dark mode */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  li:hover {
+    background: rgba(255, 255, 255, 0.2); /* Slightly lighter on hover */
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.3);
+  }
+
+  input {
+    background-color: #1e1e1e; /* Dark mode background */
+    color: #f9f9f9; /* Dark mode text color */
+  }
+}
