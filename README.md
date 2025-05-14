@@ -2,13 +2,18 @@
   <img src="./media/icons/Tagro128.png" alt="TaGro">
 </p>
 
-<h1 style="text-align: center">TaGro</h1>
+# TaGro
 
 TaGro is a Chromium extension to list, search and open Tab Groups by using shortcuts.
 
 <p align="center">
   <img src="./media/gifs/usage.gif" alt="TaGro Usage">
 </p>
+
+# Requirements
+- Chrome/Chromium/Brave (or any other Chromium-based browser)
+- Tab Groups enabled (it is by default)
+- Tab Groups opened (if you want to see them in the list)
 
 # Usage
 
