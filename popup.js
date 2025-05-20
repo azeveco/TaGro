@@ -88,8 +88,12 @@ document.addEventListener('DOMContentLoaded', () => {
         chrome.tabs.query({ groupId: group.id }, tabs => {
           if (tabs.length > 0) {
             const tab = tabs[0];
-            chrome.windows.update(tab.windowId, { focused: true }, () => {
-              chrome.tabs.update(tab.id, { active: true });
+            chrome.tabs.update(tab.id, { active: true }, () => {
+              chrome.windows.update(tab.windowId, { focused: true }, () => {
+                if (chrome.runtime.lastError) {
+                  console.error('Error focusing window:', chrome.runtime.lastError);
+                }
+              });
             });
           }
         });
