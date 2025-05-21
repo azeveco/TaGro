@@ -131,7 +131,17 @@ document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('keydown', (event) => {
     const items = Array.from(tabGroupsList.querySelectorAll('li'));
 
-    if (event.key === 'ArrowDown') {
+    if (event.key === 'Tab') {
+      event.preventDefault();
+      if (event.shiftKey) {
+        currentIndex = (currentIndex - 1 + items.length) % items.length;
+      } else {
+        currentIndex = (currentIndex + 1) % items.length;
+      }
+      items.forEach((item, index) => {
+        item.style.opacity = index === currentIndex ? '1' : '0.6';
+      });
+    } else if (event.key === 'ArrowDown') {
       event.preventDefault();
       currentIndex = (currentIndex + 1) % items.length;
       items.forEach((item, index) => {

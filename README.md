@@ -19,6 +19,7 @@ TaGro is a Chromium extension to list, search and open Tab Groups by using short
 # Installation
 
 To install TaGro, you can either:
+
 - Download the extension from the [Chrome Web Store](https://chrome.google.com/webstore/detail/tagro/).
 - Download the source code and load it as an unpacked extension:
   - Go to the extension management page
@@ -36,6 +37,7 @@ To install TaGro, you can either:
 TaGro comes with a single default shortcut defined, that can be changed.
 
 ## Default shortcut
+
 The default shortcut to open it is: `Ctrl/Cmd + Shift + Y`.
 
 > I personally use Ctrl/Cmd + G, but setting this as default would overwrite a default shortcut to find the next occurence when you do a Find (`Ctrl/Cmd + F`).
@@ -43,7 +45,8 @@ The default shortcut to open it is: `Ctrl/Cmd + Shift + Y`.
 When you open it, it will list your Tab Groups.
 
 You can also:
-- Navigate between the Tab Groups by using your up (↑) and down (↓) arrow keys
+
+- Navigate between the Tab Groups by using your up arrow key (↑)/Shift+Tab and down arrow key (↓)/Tab
 - Press enter/return with a Tab Group highlighted to open it
 - Click on a Tab Group to open it
 
@@ -72,3 +75,4 @@ The TaGro Settings page will open and you will be able to set the custom colors 
 You are welcome to contribute to this extension. The code is pretty simple.
 
 The extension is here to stay (or at least until Chrome/Chromium/Brave adds a shortcut to open the Tab Groups).
+
